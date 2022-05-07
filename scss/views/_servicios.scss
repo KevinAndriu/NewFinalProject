@@ -1,0 +1,73 @@
+/*Servicios*/
+
+.heading {
+
+    text-align: center;
+    background: white;
+    color: var($font-color-secondary);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    padding: 1rem;
+
+}
+
+
+.servicios {
+    .box_contenedor {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 1rem;
+
+        .box {
+            background: white;
+            border-radius: 2rem;
+            border: .1rem solid rgba(0, 0, 0, .2);
+            box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+            margin: 1.5rem;
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: .2 linear;
+            width: 40%;
+            height: 100%;
+
+            h3 {
+                font-size: 2em;
+                color: var($font-color-secondary);
+                padding-top: 1rem;
+                margin: 1rem;
+            }
+
+            img {
+                width: auto;
+                height: auto;
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.btn {
+
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: linear-gradient(90deg, var($background-primary), var($background-secondary));
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+
+    &:hover {
+
+        transform: scale(1.1);
+    }
+
+}

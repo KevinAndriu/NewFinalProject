@@ -1,0 +1,152 @@
+/**main Slider**/
+
+.main-slider {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.container-slider {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #fff, 0 15px 50px;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+}
+
+.slider-section {
+    width: 100%;
+}
+
+.slider-img {
+    width: auto;
+    height: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(172, 99, 99, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+
+    &:hover {
+        background: #fff;
+    }
+}
+
+.slider-btn--right {
+    right: 10px;
+}
+
+.slider-btn--left {
+    left: 10px;
+}
+
+
+/*OUR Service*/
+
+
+.icon-service {
+    background: linear-gradient(90deg, var($background-primary), var($background-secondary));
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+
+    &:hover {
+
+        transform: scale(1.1);
+    }
+}
+
+.services-info {
+    h1 {
+        text-align: center;
+        font-weight: 900;
+        padding-top: 1.5rem;
+        padding-bottom: 0.19rem;
+        text-transform: uppercase;
+        font-size: 3.4em;
+    }
+
+    .h1 {
+        font-weight: 900;
+        padding-top: 1.5rem;
+        padding-bottom: 0.19rem;
+        text-transform: uppercase;
+        font-size: 3.4em;
+    }
+
+    p {
+        font-size: 1.5em;
+        font-weight: 500;
+        margin: 0;
+        padding: 3rem 0;
+    }
+
+    .service-name {
+        margin: 4rem;
+
+        h3 {
+            font-weight: 800;
+            font-size: 1.3em;
+            padding-top: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .h3 {
+            font-weight: 800;
+            font-size: 1.3em;
+            padding-top: 0.5rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .photo-service {
+        padding: 1rem 1rem;
+    }
+}
+
+/*Raiting*/
+
+.ranting {
+    background: linear-gradient(180deg, var($background-primary), var($background-secondary));
+    padding: 3em 0;
+    margin-bottom: 5rem;
+    text-align: center;
+    border-radius: 1rem;
+
+    .ranting-name {
+        h2 {
+            font-weight: 900;
+            font-size: 3.5em;
+            padding-top: 0.8rem;
+            color: var($font-color-primary);
+        }
+
+        .h2 {
+            font-weight: 900;
+            font-size: 3.5em;
+            padding-top: 0.8rem;
+            color: var($font-color-primary);
+        }
+    }
+}

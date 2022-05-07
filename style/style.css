@@ -1,6 +1,19 @@
 /**   Fonts  **/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Open+Sans:wght@400;700&display=swap');
 
+/* variables*/
+
+:root {
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: Georgia serif;
+    --font-color-primary: rgb(0, 0, 0);
+    --font-color-secondary: black;
+    --background-primary: coral;
+    --background-secondary: white;
+
+}
+
+/*Normalize*/
 
 * {
     margin: 0;
@@ -9,9 +22,12 @@
     box-sizing: border-box;
 }
 
+/*Global styles*/
+
+/*para fuentes usar como media em, y para margin y padding rem*/
 body {
-    font-family: 'Montserrat', sans-serif;
-    /*overflow-x: hidden;*/
+    font-family: var(--font-primary);
+    overflow-x: hidden;
     width: 100%;
 
 
@@ -22,7 +38,7 @@ body {
 .top-header {
     background-color: rgb(0, 0, 39);
     color: rgb(240, 224, 224);
-    padding: 4px 0;
+    padding: 0.3rem 0;
 }
 
 .top-header .info-header {
@@ -70,14 +86,14 @@ body {
 /* Header*/
 
 .menu_color {
-    background: linear-gradient(0deg, coral, white);
+    background: linear-gradient(0deg, var(--background-primary), var(--background-secondary));
     border-radius: 5px;
 
 }
 
 .logo {
-    margin-left: 30px;
-    margin-bottom: 10px;
+    margin-left: 1.8rem;
+    margin-bottom: 0.6rem;
 
 }
 
@@ -87,16 +103,16 @@ body {
     margin: 0 5px;
     text-decoration: none;
     cursor: pointer;
-    padding-right: 10px;
+    padding-right: 0.6rem;
 }
 
 .menu_item li a {
-    padding: 10px 10px;
+    padding: 0.6rem 0.6rem;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.1em;
     display: block;
     text-transform: uppercase;
-    color: rgb(0, 0, 0);
+    color: var(--font-color-primary);
 }
 
 .menu_item li:hover,
@@ -151,7 +167,7 @@ li.active {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     border-radius: 50%;
@@ -182,11 +198,11 @@ li.active {
 
 }
 
-/*OUR Service*/
+/*OUR Services*/
 
 
 .icon-service {
-    background: linear-gradient(90deg, coral, white);
+    background: linear-gradient(90deg, var(--background-primary), var(--background-secondary));
     cursor: pointer;
     border-radius: 1rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
@@ -207,21 +223,21 @@ li.active {
 .services-info h1,
 .services-info .h1 {
     font-weight: 900;
-    padding-top: 1.5em;
-    padding-bottom: 3px;
+    padding-top: 1.5rem;
+    padding-bottom: 0.19rem;
     text-transform: uppercase;
-    font-size: 55px;
+    font-size: 3.4em;
 }
 
 .services-info p {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: 500;
     margin: 0;
     padding: 3rem 0;
 }
 
 .services-info .service-name {
-    margin: 4em;
+    margin: 4rem;
 
 }
 
@@ -229,7 +245,7 @@ li.active {
 .services-info .service-name .h3 {
     font-weight: 800;
     font-size: 1.3em;
-    padding-top: 9px;
+    padding-top: 0.5rem;
     text-transform: uppercase;
 }
 
@@ -246,7 +262,7 @@ li.active {
 /*Raiting*/
 
 .ranting {
-    background: linear-gradient(180deg, coral, white);
+    background: linear-gradient(180deg, var(--background-primary), var(--background-secondary));
     padding: 3em 0;
     margin-bottom: 5rem;
     text-align: center;
@@ -257,15 +273,15 @@ li.active {
 .ranting .ranting-name .h2 {
     font-weight: 900;
     font-size: 3.5em;
-    padding-top: 12px;
-    color: black;
+    padding-top: 0.8rem;
+    color: var(--font-color-primary);
 }
 
 
 /* Footer*/
 
 .footer {
-    background: linear-gradient(180deg, coral, white);
+    background: linear-gradient(180deg, var(--background-primary), var(--background-secondary));
     border-radius: 5px;
     width: 100%;
 
@@ -290,34 +306,34 @@ li.active {
 }
 
 .footer .contenedor_footer .container_css h4 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding: 1rem 0;
-    color: rgb(0, 0, 0);
+    color: var(--font-color-primary);
 
 }
 
 .footer .contenedor_footer .container_css span {
-    font-size: 1rem;
+    font-size: 1em;
     padding: 1rem 0;
-    color: rgb(0, 0, 0);
+    color: var(--font-color-primary);
     align-items: center;
 
 
 }
 
 .footer .contenedor_footer .container_css p {
-    font-size: 1rem;
+    font-size: 1em;
     padding: 1rem 0;
-    color: rgb(0, 0, 0);
+    color: var(--font-color-primary);
     align-items: center;
 
 }
 
 .footer .contenedor_footer .container_css a {
     display: block;
-    font-size: 1rem;
+    font-size: 1em;
     padding: .5rem 0;
-    color: rgb(0, 0, 0);
+    color: var(--font-color-primary);
     text-decoration: none;
     width: 150px;
 }
@@ -329,7 +345,7 @@ li.active {
 
 .footer .contenedor_footer .container_css i {
     margin-left: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.8em;
     border-radius: 50%;
     background: whitesmoke;
     text-align: center;
@@ -362,10 +378,10 @@ li.active {
 .footer .footer_copy h2 {
 
     color: rgb(240, 224, 224);
-    border-top: .1rem solid rgb(0, 0, 0);
+    border-top: .1rem solid var(--font-color-primary);
     padding: 1rem .5rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1em;
 
 }
 
@@ -409,14 +425,14 @@ li.active {
 }
 
 .about_us .main_who .text_who h3 {
-    font-size: 3rem;
-    color: black;
+    font-size: 3em;
+    color: var(--font-color-secondary);
     text-align: center;
 }
 
 .about_us .main_who .text_who p {
 
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: 300;
     padding: 1rem 0;
     margin: 0 1rem;
@@ -449,7 +465,7 @@ li.active {
     width: 40%;
     position: relative;
     height: 500px;
-    margin-bottom: 20px;
+    margin-bottom: 1.3rem;
     border-radius: 20px;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .6);
 }
@@ -468,7 +484,7 @@ li.active {
 .overlay h3 {
     color: #fff;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 1.8em;
     position: absolute;
     bottom: 46%;
     left: 40%;
@@ -515,7 +531,7 @@ li.active {
 
     h3 {
 
-        font-size: 20px;
+        font-size: 1.3em;
     }
 
     .gallery {
@@ -535,8 +551,8 @@ li.active {
 
     text-align: center;
     background: white;
-    color: black;
-    font-size: 2.5rem;
+    color: var(--font-color-secondary);
+    font-size: 2.5em;
     text-transform: uppercase;
     padding: 1rem;
 
@@ -571,8 +587,8 @@ li.active {
 }
 
 .servicios .box_contenedor .box h3 {
-    font-size: 2rem;
-    color: black;
+    font-size: 2em;
+    color: var(--font-color-secondary);
     padding-top: 1rem;
     margin: 1rem;
 
@@ -594,8 +610,8 @@ li.active {
     display: inline-block;
     margin-top: 1rem;
     padding: .8rem 3rem;
-    background: linear-gradient(90deg, coral, white);
-    font-size: 1.8rem;
+    background: linear-gradient(90deg, var(--background-primary), var(--background-secondary));
+    font-size: 1.8em;
     color: white;
     cursor: pointer;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
@@ -622,13 +638,13 @@ li.active {
 
 }
 
-/* Contacto*/
+/* Contact*/
 
 form {
     width: 450px;
     margin: auto;
     background: rgba(0, 0, 0, 0.4);
-    padding: 10px 20px;
+    padding: 0.6rem 1.3rem;
     border-radius: 10px;
     display: grid;
     grid-auto-columns: 100%;
@@ -636,17 +652,16 @@ form {
 
 .formulario {
 
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 h2 {
 
-    color: white;
     text-align: center;
     margin: 0;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 1.8em;
+    margin-bottom: 1.3rem;
 
 
 }
@@ -654,10 +669,10 @@ h2 {
 .input {
 
     width: 100%;
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-bottom: 1.3rem;
+    padding: 0.6rem;
     border-radius: 5px;
-    font-size: 17px;
+    font-size: 1.1em;
     border: none;
 }
 
@@ -672,7 +687,7 @@ textarea {
 
     background: chocolate;
     color: white;
-    padding: 15px;
+    padding: 0.9rem;
 
 }
 
@@ -686,6 +701,5 @@ textarea {
 
     form {
         width: 100%;
-        background-color: black;
     }
 }

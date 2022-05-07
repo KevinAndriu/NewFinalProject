@@ -1,0 +1,122 @@
+/*Top Header*/
+
+@media only screen and (max-width: 768px) {
+
+    .top-header {
+
+        .hidden-xs {
+            display: none;
+        }
+
+        .info-header i {
+            padding-left: .5rem;
+            font-size: 1rem;
+        }
+    }
+
+    /*Our Services Main Section*/
+    .services-info {
+        .photo-service {
+            display: none;
+        }
+    }
+}
+
+/*Main Slider*/
+@media screen and (max-width:700px) {
+    .slider-img {
+        width: 100%;
+
+        img {
+            width: auto;
+            object-fit: cover;
+        }
+    }
+
+    /*Gallery 700px*/
+    .gallery {
+        width: 90%;
+
+        .item {
+
+            width: 48%;
+        }
+    }
+}
+
+@media screen and (max-width:1055px) {
+
+    .about_us {
+        .main_who {
+            .img_text {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .gallery {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:700px) {
+    .gallery {
+        width: 90%;
+
+        .item {
+
+            width: 48%;
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    h3 {
+
+        font-size: 1.3em;
+    }
+
+    .gallery {
+        width: 90%;
+
+        .item {
+
+            width: 80%;
+        }
+    }
+
+
+}
+
+/*Services*/
+@media (max-width:768px) {
+
+    .servicios {
+        flex-flow: column-reverse;
+
+        .box {
+            img {
+
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*Contact*/
+@media (max-width:368px) {
+
+    form {
+        width: 100%;
+    }
+}
