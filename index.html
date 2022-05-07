@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcout icon" type="image/icon" href="./images/sin fondo_837aa1.png">
+
+    <!--CSS Nativo-->
     <link href="./style/style.css" rel="stylesheet" type="text/css" />
 
 
@@ -18,40 +22,45 @@
 <body>
     <header>
         <!-- Top Header -->
-        <section class="top_header">
+        <section class="top-header ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-xs-12">
+                        <div class="info-header">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+56 9 456 4758</span>
 
-            <div class="info_header">
-                <i class="fa-solid fa-phone"></i>
-                <span>+56 9 456 4758</span>
-
-                <i class="fa-solid fa-envelope"></i>
-                <span>petshop@gmail.com</span>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>petshop@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hidden-xs">
+                        <div class="info-social">
+                            <a href="https://www.instagram.com/super_mascotas5179/?hl=es"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="info-social">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <div class="info-social">
+                            <a
+                                href="https://api.whatsapp.com/send?phone=+56992560224&text=Hola, Nececito mas informacion!">
+                                <i class=" fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="info_social">
-                <a href="https://www.instagram.com/super_mascotas5179/?hl=es"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-
-            <div class="info_social">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-
-            <div class="info_social">
-                <a href="https://api.whatsapp.com/send?phone=+56992560224&text=Hola, Nececito mas informacion!">
-                    <i class=" fa-brands fa-whatsapp"></i>
-                </a>
-            </div>
-
         </section>
 
 
         <!-- Menu -->
-        <section class=" menu_color p-2 text-white">
+        <section class=" menu_color p-3">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center
                         justify-content-center justify-content-lg-start">
                     <a href="/" class="d-flex align-items-center my-2
-                            my-lg-0 me-lg-auto text-white
+                            my-lg-0 me-lg-auto 
                             text-decoration-none">
                         <img class=" logo" src="./images/sin fondo_837aa1.png" width=150>
                     </a>
@@ -62,14 +71,14 @@
                                     text-secondary">Inicio</a></li>
                         <li><a href="./quienessomos.html" class="nav-link
                                     px-2
-                                    text-white">Quienes Somos</a></li>
+                                    ">Quienes Somos</a></li>
                         <li><a href="./Gallery.html" class="nav-link px-2
-                                    text-white">galeria</a></li>
+                                    ">galeria</a></li>
                         <li><a href="./servicios.html" class="nav-link
                                     px-2
-                                    text-white">Servicios</a></li>
+                                    ">Servicios</a></li>
                         <li><a href="./contacto.html" class="nav-link px-2
-                                    text-white">Contacto</a></li>
+                                    ">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -78,19 +87,34 @@
 
     </header>
 
-    <!--
-    <section class="main">
-        <div class="img_main">
-            <img src="./images/slider/img3.jpg" alt="">
+    <!--Slider-->
+
+    <section class="main-slider">
+        <div class="container-slider">
+            <div class="slider" id="slider">
+
+                <div class="slider-section"><img src="./images/slider/slider_4_petshop.png" alt="slider--img"
+                        class="slider-img"></div>
+                <div class="slider-section"><img src="./images/slider/slider1.jpg" alt="slider--img" class="slider-img">
+                </div>
+                <div class="slider-section"><img src="./images/slider/slider2.jpg" alt="slider--img" class="slider-img">
+                </div>
+                <div class="slider-section"><img src="./images/slider/slider-nature1-1920x950-1920x950-1.jpg"
+                        alt="slider--img" class="slider-img"></div>
+
+            </div>
+
+            <div class="slider-btn slider-btn--left" id="btn-left"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="slider-btn slider-btn--right" id="btn-right"> <i class="fa-solid fa-arrow-right"></i></i></div>
+
         </div>
     </section>
-Main-->
 
     <!-- Servicios -->
     <section class="services-info container">
         <div class="row">
-            <div class="">
-                <h1>Nuestros Servicios</h1>
+            <div class="col-md-12">
+                <h2 class="heading">Nuestros Servicios</h2>
                 <p>
                     Encuentra todo lo que tu mascota necesita en un solo
                     lugar
@@ -100,23 +124,24 @@ Main-->
         </div>
         <div class="row">
             <div class="col-md-4 col-5">
-                <div class="service-name">
-                    <img src="./images/icons/consultante.png" width="64" height="64">
+
+                <div class="service-name icon-service">
+                    <a href="./servicios.html"><img src="./images/icons/veterinary.png" width="64" height="64"></a>
                     <h3>Consultas</h3>
                 </div>
 
-                <div class="service-name">
-                    <img src="./images/icons/veterinario.png" width="64" height="64">
+                <div class="service-name icon-service">
+                    <a href="./servicios.html"><img src="./images/icons/clinic.png" width="64" height="64"></a>
                     <h3>Cirugias</h3>
                 </div>
 
-                <div class="service-name">
-                    <img src="./images/icons/dryer.png" width="64" height="64">
+                <div class="service-name icon-service">
+                    <a href="./servicios.html"><img src="./images/icons/spa.png" width="64" height="64"></a>
                     <h3>Peluqueria</h3>
                 </div>
 
-                <div class="service-name">
-                    <img src="./images/icons/dryer.png" width="64" height="64">
+                <div class="service-name icon-service">
+                    <a href="./servicios.html"> <img src="./images/icons/cat-food.png" width="64" height="64"></a>
                     <h3>Ventas de Alimentos</h3>
                 </div>
             </div>
@@ -128,87 +153,54 @@ Main-->
 
 
             <div class="col-md-4 col-5">
-                <div class="service-name">
-                    <img src="image/icons/dryer.png" width="64" height="64">
+
+                <div class="service-name icon-service">
+                    <a href="./servicios.html"> <img src="./images/icons/pet-shop.png" width="64" height="64"></a>
                     <h3>PetShop</h3>
                 </div>
 
-                <div class="service-name">
-                    <img src="images/icons/dryer.png" width="64" height="64">
-                    <h3>Ecografia</h3>
+                <div class="service-name icon-service">
+                    <a href="./servicios.html"> <img src="./images/icons/stroller.png" width="64" height="64"></a>
+                    <h3>Guarderia</h3>
                 </div>
 
-                <div class="service-name">
-                    <img src="images/icons/dryer.png" width="64" height="64">
-                    <h3>Endoscopia</h3>
+                <div class="service-name icon-service">
+                    <a href="./servicios.html"> <img src="./images/icons/dermatology.png" width="64" height="64"></a>
+                    <h3>Dermatoligia</h3>
                 </div>
 
-                <div class="service-name">
-                    <img src="images/icons/dryer.png" width="64" height="64">
+                <div class="service-name icon-service">
+                    <a href="./servicios.html"> <img src="./images/icons/farmacia.png" width="64" height="64"></a>
                     <h3>Farmacia</h3>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Historial Empresa -->
 
-    <!-- Otros Servicios-->
-    <section class="other-services">
+    <section class="ranting">
         <div class="container">
             <div class="row">
-                <h2>Categorias de Productos</h2>
-                <div class="col-md-4">
-                    <img src="https://images.unsplash.com/photo-1513904178077-6c5730ddd446?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                        width="100%">
+                <div class="col-md-4 ranting-name">
+                    <img src="./images/icons/happy-2.png" width="128">
+                    <h2>2700</h2>
+                    <h3>Clientes Sastifechos</h3>
+                </div>
 
-                    <h3>
-                        Alimentos para Perros
-                    </h3>
+                <div class="col-md-4 ranting-name">
+                    <img src="./images/icons/pet-house.png" width="128">
+                    <h2>2700</h2>
+                    <h3>Mascotas Atendidas</h3>
+                </div>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Natus omnis suscipit distinctio optio odio
-                        totam saepe, nesciunt amet at, numquam quasi ut
-                        perferendis vel quia quibusdam ipsum est inventore
-                        debitis.
-                    </p>
+                <div class="col-md-4 ranting-name">
+                    <img src="./images/icons/pet-shop.png" width="128">
+                    <h2>3500</h2>
+                    <h3>Productos Vendidos</h3>
                 </div>
 
 
-                <div class="col-md-4">
-                    <img src="https://images.unsplash.com/photo-1513904178077-6c5730ddd446?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                        width="100%">
-
-                    <h3>
-                        Alimentos para Perros
-                    </h3>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Natus omnis suscipit distinctio optio odio
-                        totam saepe, nesciunt amet at, numquam quasi ut
-                        perferendis vel quia quibusdam ipsum est inventore
-                        debitis.
-                    </p>
-                </div>
-
-
-                <div class="col-md-4">
-                    <img src="https://images.unsplash.com/photo-1513904178077-6c5730ddd446?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                        width="100%">
-
-                    <h3>
-                        Alimentos para Perros
-                    </h3>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Natus omnis suscipit distinctio optio odio
-                        totam saepe, nesciunt amet at, numquam quasi ut
-                        perferendis vel quia quibusdam ipsum est inventore
-                        debitis.
-                    </p>
-                </div>
             </div>
         </div>
 
@@ -219,16 +211,16 @@ Main-->
 
         <div class="contenedor_footer">
 
-            <div class="container">
+            <div class="container_css">
 
                 <h4>Contacto</h4>
 
-                <p>contacto@petshop.com</p>
+                <span>contacto@petshop.com</span>
                 <p>Teléfono:+569 92560224</p>
 
             </div>
 
-            <div class="container">
+            <div class="container_css">
 
                 <h4>Siguenos</h4>
 
@@ -251,29 +243,34 @@ Main-->
 
             </div>
 
-            <div class="container">
+            <div class="container_css">
+
                 <h4>Metodos de Pagos</h4>
 
-                <div class="pagos">
-
+                <figure>
                     <img src="/images/pagos_logos.png" alt="Medios de Pagos">
-                </div>
 
+                </figure>
             </div>
 
 
             <!-- Footer Creditos-->
-            <div class="footer_copy">
 
 
-                <h2> &copy; copyright @2022 KevinAndriu. Todos los derechos reservados. Hecho
-                    en
-                    Chile</h2>
+        </div>
 
-            </div>
+        <div class="footer_copy">
+
+
+            <h2> &copy; copyright @2022 KevinAndriu. Todos los derechos reservados. Hecho
+                en
+                Chile</h2>
 
         </div>
     </footer>
+
+    <!--JS-->
+    <script src="./scripts/slider.js"> </script>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
