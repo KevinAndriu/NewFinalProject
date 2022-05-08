@@ -1,0 +1,81 @@
+/*Top Header*/
+
+.top-header {
+    background-color: rgb(0, 0, 39);
+    color: rgb(240, 224, 224);
+    padding: 0.3rem 0;
+
+    .info-header {
+        float: left;
+
+        i {
+            padding-left: map-get($padding-sizes, medium);
+            font-size: map-get($font-sizes, xsmall);
+        }
+
+        span {
+            font-size: map-get($font-sizes, xsmall);
+            padding-left: map-get($padding-sizes, medium);
+        }
+
+        .pl-3 {
+            padding-left: map-get($padding-sizes, medium);
+        }
+    }
+
+    .info-social {
+        float: right;
+    }
+
+    i {
+        padding-left: map-get($padding-sizes, medium);
+        font-size: map-get($font-sizes, small);
+    }
+}
+
+/* Header*/
+
+.menu_color {
+    background: linear-gradient(0deg, var($background-primary), var($background-secondary));
+    border-radius: 5px;
+
+}
+
+.logo {
+    margin-left: 1.8rem;
+    margin-bottom: map-get($margin-sizes, xsmall);
+
+}
+
+
+.menu_item {
+
+    li {
+        border-radius: 3px;
+        margin: 0 0.3rem;
+        text-decoration: none;
+        cursor: pointer;
+        padding-right: 0.6rem;
+
+        a {
+            padding: 0.6rem 0.6rem;
+            text-decoration: none;
+            font-size: 1.1em;
+            display: block;
+            text-transform: uppercase;
+            color: var($font-color-primary);
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .6);
+            transition: .4s;
+
+        }
+    }
+
+    li.active {
+        background-color: rgba(0, 0, 0, .6);
+        transition: .4s;
+
+    }
+}

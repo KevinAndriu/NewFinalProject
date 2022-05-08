@@ -1,0 +1,51 @@
+/* Contacto*/
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.6rem 1.3rem;
+    border-radius: 10px;
+    display: grid;
+    grid-auto-columns: 100%;
+}
+
+.formulario {
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+h2 {
+
+    text-align: center;
+    margin: 0;
+    font-size: 1.8em;
+    margin-bottom: 1.3rem;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 1.3rem;
+    padding: 0.6rem;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#btc {
+    background: chocolate;
+    color: white;
+    padding: 0.9rem;
+
+    &:hover {
+        cursor: pointer;
+
+    }
+}

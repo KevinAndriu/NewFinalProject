@@ -1,0 +1,99 @@
+/* Footer*/
+
+.footer {
+    background: linear-gradient(180deg, var($background-primary), var($background-secondary));
+    border-radius: 5px;
+    width: 100%;
+
+    .contenedor_footer {
+        .container_css {
+            h4 {
+                font-size: map-get($font-sizes, medium);
+                padding: map-get($padding-sizes, medium) 0;
+                color: var($font-color-primary);
+            }
+
+            span {
+                font-size: map-get($font-sizes, xsmall);
+                padding: map-get($padding-sizes, medium) 0;
+                color: var($font-color-primary);
+                align-items: center;
+            }
+
+            p {
+                font-size: map-get($font-sizes, xsmall);
+                padding: map-get($padding-sizes, medium) 0;
+                color: var($font-color-primary);
+                align-items: center;
+            }
+
+            a {
+                display: block;
+                font-size: map-get($font-sizes, xsmall);
+                padding: map-get($padding-sizes, xsmall) 0;
+                color: var($font-color-primary);
+                text-decoration: none;
+                width: 150px;
+
+                &:hover {
+
+                    text-decoration: underline;
+                }
+            }
+
+            i {
+                margin-left: map-get($margin-sizes, small);
+                font-size: 1.8em;
+                border-radius: 50%;
+                background: whitesmoke;
+                text-align: center;
+
+                &:hover {
+
+                    text-decoration: underline;
+                }
+            }
+
+            figure {
+                width: 250px;
+                height: 100%;
+
+                img {
+
+                    width: 200px;
+
+                }
+            }
+        }
+    }
+
+    .footer_copy {
+        margin-top: map-get($margin-sizes, xsmall);
+        width: 100%;
+        background-color: rgb(0, 0, 39);
+
+        h2 {
+
+            color: rgb(240, 224, 224);
+            border-top: .1rem solid var($font-color-primary);
+            padding: map-get($padding-sizes, medium) map-get($padding-sizes, xsmall);
+            text-align: center;
+            font-size: map-get($font-sizes, xsmall);
+
+        }
+    }
+}
+
+.contenedor_footer {
+    margin: auto;
+    @include flex1;
+
+    .container_css {
+
+        margin-left: map-get($font-sizes, xlarge);
+        width: 250px;
+        height: 250px;
+        flex-grow: 1;
+
+    }
+}

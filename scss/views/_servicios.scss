@@ -1,0 +1,70 @@
+/*Servicios*/
+
+.heading {
+
+    text-align: center;
+    background: white;
+    color: var($font-color-secondary);
+    font-size: map-get($font-sizes, large);
+    text-transform: uppercase;
+    padding: map-get($padding-sizes, medium);
+
+}
+
+
+.servicios {
+    .box_contenedor {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        @include flex3;
+        margin: map-get($margin-sizes, small);
+
+        .box {
+            background: white;
+            border-radius: 2rem;
+            border: .1rem solid rgba(0, 0, 0, .2);
+            box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+            margin: map-get($margin-sizes, medium);
+            padding: map-get($padding-sizes, xlarge) map-get($padding-sizes, large);
+            text-align: center;
+            transition: .2 linear;
+            width: 40%;
+            height: 100%;
+
+            h3 {
+                font-size: 2em;
+                color: var($font-color-secondary);
+                padding-top: map-get($padding-sizes, medium);
+                margin: map-get($margin-sizes, small);
+            }
+
+            img {
+                width: auto;
+                height: auto;
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.btn {
+
+    display: inline-block;
+    margin-top: map-get($margin-sizes, small);
+    padding: map-get($padding-sizes, small) map-get($padding-sizes, xlarge);
+    background: linear-gradient(90deg, var($background-primary), var($background-secondary));
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+
+    &:hover {
+
+        transform: scale(1.1);
+    }
+
+}

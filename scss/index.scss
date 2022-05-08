@@ -1,0 +1,20 @@
+/**   Fonts  **/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* Globales y Variables*/
+@import'./misc/normalize';
+@import './misc/mixins';
+@import'./misc/medias';
+
+/*partials*/
+@import'./partials/header';
+@import'./partials/footer';
+
+
+/*views*/
+
+@import'./views/index';
+@import'./views/quienessomos';
+@import'./views/gallery';
+@import'./views/servicios';
+@import'./views/contacto';

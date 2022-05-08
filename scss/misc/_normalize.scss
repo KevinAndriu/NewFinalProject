@@ -1,0 +1,39 @@
+/* variables*/
+
+
+$font-primary: 'Montserrat',
+sans-serif;
+$font-secondary: Georgia serif;
+$font-color-primary: rgb(0, 0, 0);
+$font-color-secondary: black;
+$background-primary: coral;
+$background-secondary: white;
+
+
+/*Normalize*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/*Global styles*/
+
+/*para fuentes usar como media em, y para margin y padding rem*/
+
+body {
+    font-family: var($font-primary);
+    overflow-x: hidden;
+    width: 100%;
+
+
+}
+
+/* Maps*/
+$font-sizes:("xsmall":1em, "small": 1.3em, "medium": 1.5em, "large": 2.5em, "xlarge": 3.5em, );
+
+$margin-sizes:("xsmall":0.6rem, "small": 1rem, "medium": 1.5rem, "large": 4rem, "xlarge": 6rem, );
+
+$padding-sizes:("xsmall":0.5rem, "small": 0.8rem, "medium": 1rem, "large": 2rem, "xlarge": 3rem, );
