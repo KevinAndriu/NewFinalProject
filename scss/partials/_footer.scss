@@ -8,29 +8,29 @@
     .contenedor_footer {
         .container_css {
             h4 {
-                font-size: 1.5em;
-                padding: 1rem 0;
+                font-size: map-get($font-sizes, medium);
+                padding: map-get($padding-sizes, medium) 0;
                 color: var($font-color-primary);
             }
 
             span {
-                font-size: 1em;
-                padding: 1rem 0;
+                font-size: map-get($font-sizes, xsmall);
+                padding: map-get($padding-sizes, medium) 0;
                 color: var($font-color-primary);
                 align-items: center;
             }
 
             p {
-                font-size: 1em;
-                padding: 1rem 0;
+                font-size: map-get($font-sizes, xsmall);
+                padding: map-get($padding-sizes, medium) 0;
                 color: var($font-color-primary);
                 align-items: center;
             }
 
             a {
                 display: block;
-                font-size: 1em;
-                padding: .5rem 0;
+                font-size: map-get($font-sizes, xsmall);
+                padding: map-get($padding-sizes, xsmall) 0;
                 color: var($font-color-primary);
                 text-decoration: none;
                 width: 150px;
@@ -42,7 +42,7 @@
             }
 
             i {
-                margin-left: 1rem;
+                margin-left: map-get($margin-sizes, small);
                 font-size: 1.8em;
                 border-radius: 50%;
                 background: whitesmoke;
@@ -68,7 +68,7 @@
     }
 
     .footer_copy {
-        margin-top: 1rem;
+        margin-top: map-get($margin-sizes, xsmall);
         width: 100%;
         background-color: rgb(0, 0, 39);
 
@@ -76,9 +76,9 @@
 
             color: rgb(240, 224, 224);
             border-top: .1rem solid var($font-color-primary);
-            padding: 1rem .5rem;
+            padding: map-get($padding-sizes, medium) map-get($padding-sizes, xsmall);
             text-align: center;
-            font-size: 1em;
+            font-size: map-get($font-sizes, xsmall);
 
         }
     }
@@ -86,14 +86,11 @@
 
 .contenedor_footer {
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
+    @include flex1;
 
     .container_css {
 
-        margin-left: 6rem;
+        margin-left: map-get($font-sizes, xlarge);
         width: 250px;
         height: 250px;
         flex-grow: 1;

@@ -2,15 +2,12 @@
 
 .about_us {
     background: white;
-    padding-bottom: 3rem;
+    padding-bottom: map-get($padding-sizes, xlarge);
 
     .main_who {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 1rem;
-        padding: 1rem;
+        @include flex3;
+        margin: map-get($margin-sizes, small);
+        padding: map-get($padding-sizes, medium);
 
         .img_text {
             flex: 1 1 30rem;
@@ -39,10 +36,10 @@
 
             p {
 
-                font-size: 1.5em;
+                font-size: map-get($font-sizes, medium);
                 font-weight: 300;
-                padding: 1rem 0;
-                margin: 0 1rem;
+                padding: map-get($padding-sizes, medium) 0;
+                margin: 0 map-get($margin-sizes, small);
             }
         }
 

@@ -1,0 +1,23 @@
+@mixin flex1 ($direction:row, $wrap: wrap, $align:center, $gap: 10px) {
+
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin flex2 ($justify: space-around, $wrap:wrap) {
+
+    display: flex;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+@mixin flex3 ($wrap:wrap, $justify: center, $align:center) {
+
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}

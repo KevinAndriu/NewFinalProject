@@ -1,12 +1,10 @@
 /*  Gallery*/
 
 .gallery {
-
-    display: flex;
+    @include flex2;
     width: 85%;
     margin: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
 
     .item {
 

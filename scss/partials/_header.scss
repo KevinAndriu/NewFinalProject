@@ -9,17 +9,17 @@
         float: left;
 
         i {
-            padding-left: 1rem;
-            font-size: 1rem;
+            padding-left: map-get($padding-sizes, medium);
+            font-size: map-get($font-sizes, xsmall);
         }
 
         span {
-            font-size: 1rem;
-            padding-left: .5rem;
+            font-size: map-get($font-sizes, xsmall);
+            padding-left: map-get($padding-sizes, medium);
         }
 
         .pl-3 {
-            padding-left: 1rem;
+            padding-left: map-get($padding-sizes, medium);
         }
     }
 
@@ -28,8 +28,8 @@
     }
 
     i {
-        padding-left: 1rem;
-        font-size: 1.3rem;
+        padding-left: map-get($padding-sizes, medium);
+        font-size: map-get($font-sizes, small);
     }
 }
 
@@ -43,7 +43,7 @@
 
 .logo {
     margin-left: 1.8rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: map-get($margin-sizes, xsmall);
 
 }
 
@@ -52,7 +52,7 @@
 
     li {
         border-radius: 3px;
-        margin: 0 5px;
+        margin: 0 0.3rem;
         text-decoration: none;
         cursor: pointer;
         padding-right: 0.6rem;

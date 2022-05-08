@@ -9,8 +9,8 @@
         }
 
         .info-header i {
-            padding-left: .5rem;
-            font-size: 1rem;
+            padding-left: map-get($padding-sizes, xsmall);
+            font-size: map-get($font-sizes, xsmall);
         }
     }
 
@@ -83,7 +83,7 @@
 
     h3 {
 
-        font-size: 1.3em;
+        font-size: map-get($font-sizes, small);
     }
 
     .gallery {
