@@ -15,15 +15,6 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-
-    /*Our Services Main Section*/
-    .services-info {
-        .photo-service {
-            display: none;
-        }
-    }
-}
 
 /*Main Slider*/
 @media screen and (max-width:700px) {
@@ -31,24 +22,34 @@
         width: 100%;
     }
 
-    /*Gallery 700px*/
-    .gallery {
-        width: 90%;
-
-        .item {
-
-            width: 48%;
-        }
-    }
 }
-
 
 @media (max-width:500px) {
 
     .slider-img {
         width: 100%;
     }
+
+
 }
+
+@media screen and (max-width:450px) {
+
+    .main-slider {
+        display: none;
+    }
+
+    h3 {
+
+        font-size: map-get($font-sizes, small);
+    }
+
+    form {
+        text-align: center;
+    }
+}
+
+
 
 @media screen and (max-width:1055px) {
 
@@ -67,46 +68,8 @@
     }
 }
 
-@media screen and (max-width:1200px) {
-    .gallery {
-        width: 100%;
-
-    }
-}
-
-@media screen and (max-width:700px) {
-    .gallery {
-        width: 90%;
-
-        .item {
-
-            width: 48%;
-        }
-    }
-}
-
-@media screen and (max-width:450px) {
-
-    .main-slider {
-        display: none;
-    }
-
-    h3 {
-
-        font-size: map-get($font-sizes, small);
-    }
-
-    .gallery {
-        width: 90%;
-
-        .item {
-
-            width: 80%;
-        }
-    }
 
 
-}
 
 /*Services*/
 @media (max-width:768px) {
