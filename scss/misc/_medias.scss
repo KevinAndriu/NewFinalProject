@@ -13,6 +13,9 @@
             font-size: map-get($font-sizes, xsmall);
         }
     }
+}
+
+@media only screen and (max-width: 768px) {
 
     /*Our Services Main Section*/
     .services-info {
@@ -26,11 +29,6 @@
 @media screen and (max-width:700px) {
     .slider-img {
         width: 100%;
-
-        img {
-            width: auto;
-            object-fit: cover;
-        }
     }
 
     /*Gallery 700px*/
@@ -41,6 +39,14 @@
 
             width: 48%;
         }
+    }
+}
+
+
+@media (max-width:500px) {
+
+    .slider-img {
+        width: 100%;
     }
 }
 
@@ -81,6 +87,10 @@
 
 @media screen and (max-width:450px) {
 
+    .main-slider {
+        display: none;
+    }
+
     h3 {
 
         font-size: map-get($font-sizes, small);
@@ -115,7 +125,6 @@
 
 /*Contact*/
 @media (max-width:368px) {
-
     form {
         width: 100%;
     }

@@ -36,7 +36,7 @@
 /* Header*/
 
 .menu_color {
-    background: linear-gradient(0deg, var($background-primary), var($background-secondary));
+    background: linear-gradient(0deg, $background-primary, $background-secondary);
     border-radius: 5px;
 
 }
@@ -63,7 +63,7 @@
             font-size: 1.1em;
             display: block;
             text-transform: uppercase;
-            color: var($font-color-primary);
+            color: ($font-color-primary);
         }
 
         &:hover {
